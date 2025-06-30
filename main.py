@@ -6,12 +6,19 @@ from prog_random.piedra_papel_tijera.juego import juego
 from prog_random.opciones_random import opciones_random
 from prog_datatime.edades import calcular_edad
 from prog_calendar.dias import mostrar_meses
+from prog_os.carpetas import navegar_carpetas
+from prog_json.json import programa_json
+from prog_math.calculadora import programa_math
+from prog_re.texto import buscador_texto
+from prog_secrets.secrets import programa_secrets
+from prog_statistics.numero import calcular_estadisticas
+from prog_time.cronometro import tiempo
 
 while True:
     #Posibles Opciones
     try:
         informacion()
-        eleccion = input("¿Cual bibilioteca desea utilizar?")
+        eleccion = input("¿Cual bibilioteca desea utilizar? ")
 
         match eleccion:
             #calendar
@@ -22,16 +29,16 @@ while True:
                 calcular_edad()
             #os
             case "3":
-                pass
+                navegar_carpetas()
             #json
             case "4":
-                pass
+                programa_json()
             #math
             case "5":
-                pass
+                programa_math()
             #secrets
             case "6":
-                pass
+                programa_secrets()
             #random
             case "7":
                 opciones_random()
@@ -44,14 +51,13 @@ while True:
                     juego()
             #re
             case "8":
-                pass
+                buscador_texto()
             #statistics
             case "9":
-                pass
+                calcular_estadisticas()
             #time
             case "10":
-                pass
-            #exit
+                tiempo()
             case "11":
                 break
 

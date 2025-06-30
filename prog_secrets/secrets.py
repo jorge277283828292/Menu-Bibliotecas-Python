@@ -1,0 +1,35 @@
+import secrets
+import string
+
+def programa_secrets():
+    print("Generador de contraseñas y tokens")
+    while True:
+        print("\nOpciones:")
+        print("1. Generar contraseña")
+        print("2. Generar token")
+        print("3. Salir")
+        
+        opcion = input("Ingresa una opción: ")
+
+        if opcion == "1":
+            try:
+                longitud = int(input("Ingresa la longitud de la contraseña: "))
+                caracteres = string.ascii_letters + string.digits + string.punctuation
+                contraseña = ''.join(secrets.choice(caracteres) for _ in range(longitud))
+                print(f"Contraseña generada: {contraseña}")
+            except ValueError:
+                print("❌ Longitud inválida. Debe ser un número.")
+
+        elif opcion == "2":
+            try:
+                longitud = int(input("Ingresa la longitud del token: "))
+                token = secrets.token_urlsafe(longitud)
+                print(f"Token generado: {token}")
+            except ValueError:
+                print("❌ Longitud inválida. Debe ser un número.")
+
+        elif opcion == "3":
+            print("Saliendo del módulo secrets...")
+            break
+        else:
+            print("Opción inválida. Por favor, intenta de nuevo.")
