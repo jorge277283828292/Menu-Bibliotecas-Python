@@ -5,8 +5,11 @@ import random
 def adivinar():
     numeroSecreto = random.randint(1,10)
     intentos = 0
+    print("=" *50)
     print("Este juego se trata de adivinar un numero secreto desde el 0 al 10, " \
     "al final el programa te dira cuantos intentos te tomo")
+    print("=" *50)
+    print("")
 
     while True:
         intento = int(input("Adivinar el numero: "))
