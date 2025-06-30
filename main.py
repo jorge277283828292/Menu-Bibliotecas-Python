@@ -1,6 +1,9 @@
 #Este programa se trata sobre un menu de opciones en distintas bibliotecas de python
 from opcions import informacion
-from prog_random.adivinar import adivinar
+from prog_random.adivinar.adivinar import adivinar
+from prog_random.generador_contrasenas.generador import contras
+from prog_random.piedra_papel_tijera.juego import juego
+from prog_random.opciones_random import opciones_random
 from prog_datatime.edades import calcular_edad
 from prog_calendar.dias import mostrar_meses
 
@@ -31,7 +34,14 @@ while True:
                 pass
             #random
             case "7":
-                adivinar()
+                opciones_random()
+                eleccion_random = input("¿Cual programa deseas ejecutar?")
+                if eleccion_random == "1":
+                    adivinar()
+                elif eleccion_random == "2":
+                    contras()
+                elif eleccion_random == "3":
+                    juego()
             #re
             case "8":
                 pass
