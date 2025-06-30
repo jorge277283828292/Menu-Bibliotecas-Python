@@ -8,6 +8,6 @@ def mostrar_meses():
         print(calendar.month(year, mes))
         print("\n")
 
-    #Tiempo de espera
+    #Tiempo de espera.
     print("Volviendo al menú en 3 segundos...")
     time.sleep(3)

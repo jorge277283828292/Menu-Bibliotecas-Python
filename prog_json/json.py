@@ -1,7 +1,7 @@
 import json
-
+import time
 def programa_json():
-    while True:
+        #Opciones multiples para la modificaciones, edicion o eliminacion de un documento formato JSON
         print("\nOpciones:")
         print("1. Crear archivo JSON")
         print("2. Leer archivo JSON")
@@ -72,3 +72,7 @@ def programa_json():
             break
         else:
             print("Opción inválida. Por favor, intenta de nuevo.")
+
+        #Tiempo de espera
+        print("Volviendo al menú en 3 segundos...")
+        time.sleep(3)

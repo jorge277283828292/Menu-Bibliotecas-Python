@@ -11,6 +11,6 @@ def calcular_edad():
     edad = hoy.year - fecha_nacimiento.year - ((hoy.month, hoy.day) < (fecha_nacimiento.month, fecha_nacimiento.day))
     print(f"Tu edad es: {edad} años")
 
-    #Tiempo de espera
+    #Tiempo de espera.
     print("Volviendo al menú en 3 segundos...")
     time.sleep(3)

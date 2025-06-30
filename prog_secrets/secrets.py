@@ -1,9 +1,11 @@
 import secrets
 import string
+import time
 
 def programa_secrets():
     print("Generador de contraseñas y tokens")
     while True:
+        #Opciones de generacion de claves a tokens
         print("\nOpciones:")
         print("1. Generar contraseña")
         print("2. Generar token")
@@ -11,6 +13,7 @@ def programa_secrets():
         
         opcion = input("Ingresa una opción: ")
 
+        #Si es contraseña
         if opcion == "1":
             try:
                 longitud = int(input("Ingresa la longitud de la contraseña: "))
@@ -20,6 +23,7 @@ def programa_secrets():
             except ValueError:
                 print("❌ Longitud inválida. Debe ser un número.")
 
+        #Si es token
         elif opcion == "2":
             try:
                 longitud = int(input("Ingresa la longitud del token: "))
@@ -33,3 +37,6 @@ def programa_secrets():
             break
         else:
             print("Opción inválida. Por favor, intenta de nuevo.")
+
+        print("Volviendo al menú en 3 segundos...")
+        time.sleep(3)

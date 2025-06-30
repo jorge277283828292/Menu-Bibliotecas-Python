@@ -15,11 +15,11 @@ def adivinar():
         intento = int(input("Adivinar el numero: "))
         intentos = intentos + 1
         
-        #Si la respuesta es correcta
+        #Si la respuesta es correcta.
         if intento == numeroSecreto:
             print(f"Correcto adivinaste el numero : {numeroSecreto}, en {intentos} intentos.")
             break
-        #Si la respuesta es incorrecta
+        #Si la respuesta es incorrecta.
         if not (1 <= intento <= 10):
             print(f"Error, numero de rango invalido")
             continue

@@ -1,10 +1,12 @@
 import os
+import time
 
 def navegar_carpetas():
     ruta_actual = os.getcwd()
     print(f"Ruta actual: {ruta_actual}")
     
     while True:
+        #Navegador entre carpetas y documentos del computador.
         print("\nOpciones:")
         print("1. Listar contenido de la carpeta actual")
         print("2. Cambiar a otra carpeta")
@@ -50,3 +52,7 @@ def navegar_carpetas():
             break
         else:
             print("Opción inválida. Por favor, intenta de nuevo.")
+        
+        #Tiempo de espera.
+        print("Volviendo al menú en 3 segundos...")
+        time.sleep(3)

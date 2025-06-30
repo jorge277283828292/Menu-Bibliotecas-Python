@@ -4,3 +4,4 @@ def opciones_random():
 2º Programa de Generador de Contraseñas
 3º Programa de Juego de Piedra, Papel o Tijera
           """)
+        #Opciones de la biblioteca random.
