@@ -1,8 +1,10 @@
 import math
 import time
+
 def programa_math():
     while True:
         #Calculadora avanzada.
+        #Avance calculate.
         print("\nOpciones:")
         print("1. Funciones trigonométricas")
         print("2. Logaritmos")
@@ -65,6 +67,7 @@ def programa_math():
         else:
             print("Opción inválida. Por favor, intenta de nuevo.")
 
-        #Tiempo de espera
+        #Tiempo de espera.
+        #Waiting time.
         print("Volviendo al menú en 3 segundos...")
         time.sleep(3)

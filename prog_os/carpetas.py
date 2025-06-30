@@ -7,6 +7,7 @@ def navegar_carpetas():
     
     while True:
         #Navegador entre carpetas y documentos del computador.
+        #Browser between folders and documents on your computer.
         print("\nOpciones:")
         print("1. Listar contenido de la carpeta actual")
         print("2. Cambiar a otra carpeta")
@@ -54,5 +55,6 @@ def navegar_carpetas():
             print("Opción inválida. Por favor, intenta de nuevo.")
         
         #Tiempo de espera.
+        #Waiting time.
         print("Volviendo al menú en 3 segundos...")
         time.sleep(3)

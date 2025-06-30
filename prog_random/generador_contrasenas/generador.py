@@ -18,6 +18,7 @@ def contras():
 
     print("Bienvenido, aquí puedes generar tu contraseña")
     #Dependiendo de el usuario esta va a ser la longitud del programa.
+    #Depending on the user, this will be the length of the program.
     try:
         num = int(input("Dame la longitud que deseas que tenga la contraseña: "))
     except ValueError:
@@ -49,14 +50,17 @@ def contras():
                 continue
             
             #Agrega letras.
+            #Add letters.
             if usar_letras:
                 caracteres += s.ascii_letters
                 contraseña.append(r.choice(s.ascii_letters))
-            #Agrega Numeros.
+            #Agrega numeros.
+            #Add numbers.
             if usar_numeros:
                 caracteres += s.digits
                 contraseña.append(r.choice(s.digits))
-            #Agrega Simbolos.
+            #Agrega simbolos.
+            #Add simbols.
             if usar_simbolos:
                 caracteres += s.punctuation
                 contraseña.append(r.choice(s.punctuation))
@@ -71,5 +75,7 @@ def contras():
         else:
             print("❌ Opción inválida")
 
+    #Tiempo de espera.
+    #Waiting time.
     print("Volviendo al menú en 3 segundos...")
     time.sleep(3)

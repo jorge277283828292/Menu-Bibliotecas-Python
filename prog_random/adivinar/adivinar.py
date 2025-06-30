@@ -2,6 +2,7 @@ import time
 import random
 
 #Genera un numero entre 1 al 10, y el usuario debe adivinar.
+#Generates a number between 1 and 10, and the user must guess.
 def adivinar():
     numeroSecreto = random.randint(1,10)
     intentos = 0
@@ -16,14 +17,17 @@ def adivinar():
         intentos = intentos + 1
         
         #Si la respuesta es correcta.
+        #If the answer is correct.
         if intento == numeroSecreto:
             print(f"Correcto adivinaste el numero : {numeroSecreto}, en {intentos} intentos.")
             break
         #Si la respuesta es incorrecta.
+        #If the answer is wrong.
         if not (1 <= intento <= 10):
             print(f"Error, numero de rango invalido")
             continue
 
-    #Tiempo de espera
+    #Tiempo de espera.
+    #Waiting time.
     print("Volviendo al menú en 3 segundos...")
     time.sleep(3)

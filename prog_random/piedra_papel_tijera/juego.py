@@ -16,6 +16,7 @@ def juego():
         print()
 
         #Si la respuesta no es "Piedra", "Papel" o "Tijera".
+        #If the answer isn't "Stone", "Paper", "Scissor".
         if usuario not in elecciones:
             print("Elección inválida, no se puede usar esa jugada.")
             continue
@@ -24,6 +25,7 @@ def juego():
         print(f"La computadora eligió: {computadora}")
 
         #Los posibles resultados.
+        #The possibles results.
         if usuario == computadora:
             resultado = "Empate"
         elif (usuario == "piedra" and computadora == "tijera") or \
@@ -36,10 +38,12 @@ def juego():
             victorias_computadora += 1
 
         #Recuento del marcador.
+        #Count the marker.
         print(f"{resultado}! | Marcador -> Computadora: {victorias_computadora}, Usuario: {victorias_usuario}")
         print("-"*80)
 
         #Si el usuario gana.
+        #If users win.
         if victorias_usuario == 3:
             print("¡La victoria es tuya! 🏆")
             print(f"Marcador final -> Computadora: {victorias_computadora}, Usuario: {victorias_usuario}")
@@ -48,6 +52,7 @@ def juego():
             break
 
         #Si la computadora gana.
+        #If the computers win.
         elif victorias_computadora == 3:
             print("¡La computadora se ha llevado la victoria! 😢")
             print(f"Marcador final -> Computadora: {victorias_computadora}, Usuario: {victorias_usuario}")
